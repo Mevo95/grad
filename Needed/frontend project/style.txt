@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap');
+:root {
+  --main-font: 'Dosis', sans-serif;
+  --light-bg: #1B2430;
+  --main-color:#E94560;
+  --font-color: #fff;
+  --transition: .7s;
+  --border:2px solid rgb(51, 51, 51);
+}
+-----------------------------------------
+API:
+https://www.themoviedb.org/
+https://developers.themoviedb.org/3/trending/get-trending
+https://image.tmdb.org/t/p/w500/
+
+
+-------------------------------------------
+image Half path :
+https://image.tmdb.org/t/p/w500/
