@@ -18,16 +18,13 @@ class UserSerializer(serializers.ModelSerializer):
       
 
 class PostSerializer(serializers.ModelSerializer):
-    author = serializers.StringRelatedField()
 
     class Meta:
         model = Post
-        fields = ('id', 'title', 'content', 'date_posted', 'author')
+        fields = ('title', 'content')
         
 class CommentSerializer(serializers.ModelSerializer):
-    author = serializers.StringRelatedField()
-    post = serializers.StringRelatedField()
 
     class Meta:
         model = Comment
-        fields = ('id', 'content', 'date_posted', 'author', 'post')
+        fields = ('content')

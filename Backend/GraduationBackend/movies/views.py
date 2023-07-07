@@ -80,7 +80,20 @@ class CommentUpdateView(generics.UpdateAPIView):
         serializer.save()            
 
 
-            
+@login_required
+def create_post(request):
+    if request.method == 'POST':
+        # Get the form data from the request
+        content = request.POST['content']
+        title = request.POST['title']
+         
+        Post = Post.objects.create(
+            content=content,
+            title=title,
+            author_id=request.user.id
+        )
+    
+    return render(request, 'create_post.html')            
 
 
 

@@ -19,5 +19,4 @@ urlpatterns = [
     path ('comment/<int:pk>/update',views.CommentUpdateView.as_view(),name='commentUpdate'),
     
     
-    
 ]
